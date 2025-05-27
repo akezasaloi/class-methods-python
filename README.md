@@ -4,14 +4,14 @@
 A method to deposit funds, store the deposit and return a message with the new balance to the customer. It should only accept positive amounts.
 ### Withdraw
 A method to withdraw funds, store the withdrawal and return a message with the new balance to the customer. An account cannot be overdrawn.
-### Transfer Funds
-A Method to transfer funds from one account to an instance of another account.
 ### Get Balance
 A method to calculate an account balance from deposits and withdrawals.
 ### Request Loan
 A method to request a loan amount.
 ### Repay Loan
 A method to repay a loan with a given amount.
+### Transfer Funds
+A Method to transfer funds from one account to an instance of another account.
 ### View Account Details
 A method to display the account owner's details and current balance.
 ### Change Account Owner
