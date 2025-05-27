@@ -23,4 +23,6 @@ A method to calculate and apply an interest to the balance. Use 5% interest.
 ### Freeze/Unfreeze Account
 Methods to freeze and unfreeze the account for security reasons.
 ### Set Minimum Balance
-A method to enforce a minimum balance requirement. You cannot withdraw if your balance is less than this amount.Close Account: Method to close the account and set all balances to zero and empty all transactions.
+A method to enforce a minimum balance requirement. You cannot withdraw if your balance is less than this amount.
+### Close Account: 
+A method to close the account and set all balances to zero and empty all transactions.
