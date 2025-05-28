@@ -76,12 +76,10 @@ class Account:
         print(f"Current balance: {self.get_balance()} KES\n")
 
     def interest(self):
-        if self.close_account or self.freeze_account:
-            return "Account is not active."
         interest = self.balance * 0.05
         self.balance += interest
-        self.deposits.append(interest)
-        print( f"Interest of {interest:.1f} was added to your account's balance, your new balance is {self.balance:.1f} KES")
+        self.deposit.append(interest)
+        return f"Interest of {interest:.1f} was added to your account's balance, your new balance is {self.balance:.1f} KES"
 
     def transfer_funds(self, amount, receiver):
         if amount > 0 and self.get_balance() >= amount:
@@ -125,17 +123,20 @@ class Account:
 
 account1 = Account("Akeza")
 account2 = Account("Saloi")
-# print("Your account balance is",account1.get_balance(),"KES")
-# print(account1.request_loan(1000))
-# print(account1.deposits(1000))
-# print(account1.withdraws(200))
-# print(account1.withdraws(10))
-# print(account1.request_loan(500))
-# print(account1.repay_loan(200))
-# print(account1.transfer_funds(500,account2))
-# account1.get_account_statement()
-# account2.get_account_statement()
-# account2.freeze_account()
-account1.close_account()
+print("Your account balance is",account1.get_balance(),"KES")
+print(account1.request_loan(1000))
+print(account2.deposits(1000))
+print(account1.deposits(2000))
+print(account1.withdraws(200))
+print(account1.withdraws(10))
+print(account1.request_loan(500))
+print(account1.repay_loan(200))
+print(account1.transfer_funds(500,account2))
+account1.get_account_statement()
+account2.get_account_statement()
+account2.freeze_account()
+account1.unfreeze_account()
+print(account2.interest())
+print(account2.set_min_balance(500))
 
 
