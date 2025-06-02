@@ -1,5 +1,8 @@
 # class-methods-python
 ## Building a program that acts as an account allowing user to perform all general account transactions. 
+### Class Account
+### Class Transaction
+Stores all transactions with attributes of date and time, narration, amount and transaction type
 ### Deposit
 A method to deposit funds, store the deposit and return a message with the new balance to the customer. It should only accept positive amounts.
 ### Withdraw
